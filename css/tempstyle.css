@@ -1,0 +1,9 @@
+
+.con{
+    margin: 10% auto;
+    width: 360px;
+}
+.completed{
+    color:lightgray;
+    text-decoration: line-through;
+}

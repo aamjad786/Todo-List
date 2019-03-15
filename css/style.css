@@ -1,0 +1,170 @@
+.con{
+    margin: 10% auto;
+    width: 500px;
+}
+.completed{
+    color:lightgray;
+    text-decoration: line-through;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: #202028;
+    height: 100vh;
+    transition: 0.5s;
+    color: white;
+}
+.container{
+    text-align: left;
+}
+.heading{
+    font-weight: bold;
+    font-size: 32px;
+    color: #e7e7e7;
+    text-align: right;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.box{
+    color: #e7e7e7;
+    width: 100px;
+    height: 50px;
+    background: #000;
+    border-radius: 125px;
+    position: absolute;
+    margin-top:20px; 
+    
+}
+.container .button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top:5px;
+    background: #fff;
+    transition: .5s;
+    left:5.7px;
+}
+.dark{
+    position: relative;
+    left: -70px;
+    font-weight: bold;
+    font-size: 16px;
+    top:10px;        
+}
+.light{
+    position: relative;
+    right:-50px;
+    font-weight: bold;
+    font-size: 16px;
+    top:10px;
+}
+/* Todo Styling */
+h1{
+    background: #27ae60;
+    font-weight: normal;
+    padding: 10px 20px;
+    font-size:30px;
+    border-radius:5px 5px 0 0; 
+    margin: 0%;
+}
+ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+li{
+    background: #FF3031;
+    height: 50px;
+    line-height: 50px;
+     
+
+}
+li:nth-child(2n){
+    background: #D63031;
+}
+input[type="text"]{
+    background: #D63031;
+    font-size: 18px;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    margin: 0%;
+    border-radius:0 0 5px 5px;
+    border: none;
+    color: white;
+    box-sizing:border-box; 
+}
+input::placeholder{
+    color: ghostwhite;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #27ae60; 
+}
+.fa-pencil-alt{
+    float: right;
+}
+ul span{
+    background: #3498db;
+    height: 50px;
+    width: 0px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.2s linear;
+	opacity: 0;
+}
+li:hover span{
+    width: 40px;
+    opacity: 1;
+}
+/* Light theme styling */
+
+.light-theme {
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #262626;
+}
+
+.light-theme input {
+	font-size: 18px;
+	color: #2980b9;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+.light-theme input:focus{
+	background: #fff;
+	border: 3px solid #27ae60;
+	outline: none;
+}
+.light-theme input::placeholder{
+    color: dimgray;
+}
+.light-theme li {
+	background: #fff;
+	height: 50px;
+	line-height: 50px;
+	color: #666;
+}
+
+.light-theme li:nth-child(2n){
+	background: #f1f0f0;
+}
+.light-theme .box {
+  background: #a43333;
+}
+.light-theme .container .button {
+  transform: translateX(50px);
+}
+
+.light-theme .dark, .light-theme .light,.light-theme .heading{
+    color: #a43333;
+    font-weight: bold;
+    transition: .5s;
+}
